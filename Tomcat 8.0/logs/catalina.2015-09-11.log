@@ -1,0 +1,348 @@
+11-Sep-2015 09:43:25.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.24
+11-Sep-2015 09:43:25.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2015 20:19:55 UTC
+11-Sep-2015 09:43:25.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.24.0
+11-Sep-2015 09:43:25.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+11-Sep-2015 09:43:25.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+11-Sep-2015 09:43:25.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Sep-2015 09:43:25.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.7.0_79\jre
+11-Sep-2015 09:43:25.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_79-b15
+11-Sep-2015 09:43:25.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Sep-2015 09:43:25.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Program Files\Apache Software Foundation\Tomcat 8.0
+11-Sep-2015 09:43:25.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Apache Software Foundation\Tomcat 8.0
+11-Sep-2015 09:43:25.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Program Files\Apache Software Foundation\Tomcat 8.0\conf\logging.properties
+11-Sep-2015 09:43:25.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Sep-2015 09:43:25.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Program Files\Apache Software Foundation\Tomcat 8.0\endorsed
+11-Sep-2015 09:43:25.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Program Files\Apache Software Foundation\Tomcat 8.0
+11-Sep-2015 09:43:25.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Apache Software Foundation\Tomcat 8.0
+11-Sep-2015 09:43:25.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Program Files\Apache Software Foundation\Tomcat 8.0\temp
+11-Sep-2015 09:43:25.948 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.7.0_71\bin;C:\Program Files (x86)\Git\cmd;C:\HashiCorp\Vagrant\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Maven\apache-maven-3.1.1\bin;C:\Applications\Atlassian\atlassian-plugin-sdk-5.1.2\bin;.
+11-Sep-2015 09:43:26.061 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Sep-2015 09:43:26.086 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Sep-2015 09:43:26.088 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Sep-2015 09:43:26.090 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["ajp-nio-8009"]
+ java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:339)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:737)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:457)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+11-Sep-2015 09:43:26.093 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:339)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:737)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:457)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 13 more
+
+11-Sep-2015 09:43:26.095 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 519 ms
+11-Sep-2015 09:43:26.121 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+11-Sep-2015 09:43:26.122 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.24
+11-Sep-2015 09:43:26.132 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\docs
+11-Sep-2015 09:43:26.489 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\docs has finished in 357 ms
+11-Sep-2015 09:43:26.490 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\examples
+11-Sep-2015 09:43:27.183 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\examples has finished in 692 ms
+11-Sep-2015 09:43:27.183 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\host-manager
+11-Sep-2015 09:43:27.219 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\host-manager has finished in 35 ms
+11-Sep-2015 09:43:27.219 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\manager
+11-Sep-2015 09:43:27.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\manager has finished in 38 ms
+11-Sep-2015 09:43:27.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ROOT
+11-Sep-2015 09:43:27.281 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ROOT has finished in 24 ms
+11-Sep-2015 09:43:27.283 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Sep-2015 09:43:27.291 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1195 ms
+11-Sep-2015 10:09:38.283 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+11-Sep-2015 10:09:38.283 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+11-Sep-2015 10:09:38.340 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+11-Sep-2015 11:46:21.533 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+11-Sep-2015 11:46:21.534 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+11-Sep-2015 11:46:21.577 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+11-Sep-2015 11:46:51.592 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+11-Sep-2015 11:46:51.593 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+11-Sep-2015 11:46:51.645 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+11-Sep-2015 11:48:21.693 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+11-Sep-2015 11:48:21.693 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+11-Sep-2015 11:48:21.746 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+11-Sep-2015 11:50:51.831 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+11-Sep-2015 11:50:51.832 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+11-Sep-2015 11:50:51.868 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to initialize component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[].StandardWrapper[null]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardContext.addChild(StandardContext.java:2710)
+	at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1368)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1181)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5066)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3746)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1363)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1336)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1534)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:285)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1141)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.apache.tomcat.util.modeler.Util.objectNameValueNeedsQuote(Util.java:26)
+	at org.apache.catalina.core.StandardWrapper.getObjectNameKeyProperties(StandardWrapper.java:1801)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:882)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 24 more
+
+11-Sep-2015 11:50:51.871 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Exception starting Context with name []
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3746)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1363)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1336)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1534)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:285)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1141)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to initialize component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[].StandardWrapper[null]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardContext.addChild(StandardContext.java:2710)
+	at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1368)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1181)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5066)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+
+11-Sep-2015 11:50:51.873 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+11-Sep-2015 11:58:42.123 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+11-Sep-2015 11:58:42.124 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Error during context [] restart
+ org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:141)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1372)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1336)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1534)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:285)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1141)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[].StandardWrapper[null]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5377)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: null source
+	at java.util.EventObject.<init>(EventObject.java:56)
+	at javax.management.Notification.<init>(Notification.java:184)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1782)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 14 more
+
+11-Sep-2015 13:40:51.391 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+11-Sep-2015 13:40:51.447 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+11-Sep-2015 13:40:51.447 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+11-Sep-2015 13:40:51.477 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+11-Sep-2015 13:40:51.481 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+11-Sep-2015 13:40:51.482 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+11-Sep-2015 13:40:51.482 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+11-Sep-2015 13:40:51.484 WARNING [Thread-4] org.apache.catalina.util.LifecycleBase.destroy Calling stop() on failed component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] to trigger clean-up did not complete.
+ org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:272)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:840)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1013)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:840)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1013)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:603)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:859)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:699)
+	at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:799)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[].StandardWrapper[null]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5377)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 13 more
+Caused by: java.lang.IllegalArgumentException: null source
+	at java.util.EventObject.<init>(EventObject.java:56)
+	at javax.management.Notification.<init>(Notification.java:184)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1782)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 15 more
+
+11-Sep-2015 13:40:51.487 SEVERE [Thread-4] org.apache.catalina.core.ContainerBase.removeChild ContainerBase.removeChild: destroy: 
+ org.apache.catalina.LifecycleException: Failed to destroy component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:309)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:840)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1013)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:840)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1013)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:603)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:859)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:699)
+	at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:799)
+Caused by: org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [org.apache.catalina.deploy.NamingResourcesImpl@7b79f4cf] in state [STARTED]
+	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:409)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:299)
+	at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5494)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	... 12 more
+
+11-Sep-2015 13:41:25.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.24
+11-Sep-2015 13:41:25.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2015 20:19:55 UTC
+11-Sep-2015 13:41:25.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.24.0
+11-Sep-2015 13:41:25.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+11-Sep-2015 13:41:25.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+11-Sep-2015 13:41:25.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Sep-2015 13:41:25.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.7.0_79\jre
+11-Sep-2015 13:41:25.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.7.0_79-b15
+11-Sep-2015 13:41:25.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Sep-2015 13:41:25.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Program Files\Apache Software Foundation\Tomcat 8.0
+11-Sep-2015 13:41:25.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Apache Software Foundation\Tomcat 8.0
+11-Sep-2015 13:41:25.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Program Files\Apache Software Foundation\Tomcat 8.0\conf\logging.properties
+11-Sep-2015 13:41:25.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Sep-2015 13:41:25.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Program Files\Apache Software Foundation\Tomcat 8.0\endorsed
+11-Sep-2015 13:41:25.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Program Files\Apache Software Foundation\Tomcat 8.0
+11-Sep-2015 13:41:25.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Apache Software Foundation\Tomcat 8.0
+11-Sep-2015 13:41:25.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Program Files\Apache Software Foundation\Tomcat 8.0\temp
+11-Sep-2015 13:41:25.612 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.7.0_71\bin;C:\Program Files (x86)\Git\cmd;C:\HashiCorp\Vagrant\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Maven\apache-maven-3.1.1\bin;C:\Applications\Atlassian\atlassian-plugin-sdk-5.1.2\bin;.
+11-Sep-2015 13:41:25.716 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Sep-2015 13:41:25.737 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Sep-2015 13:41:25.740 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Sep-2015 13:41:25.742 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["ajp-nio-8009"]
+ java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:339)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:737)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:457)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+11-Sep-2015 13:41:25.744 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:567)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:339)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:737)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:457)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 13 more
+
+11-Sep-2015 13:41:25.745 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 463 ms
+11-Sep-2015 13:41:25.767 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+11-Sep-2015 13:41:25.767 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.24
+11-Sep-2015 13:41:25.775 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\docs
+11-Sep-2015 13:41:26.091 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\docs has finished in 316 ms
+11-Sep-2015 13:41:26.092 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\examples
+11-Sep-2015 13:41:26.467 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\examples has finished in 374 ms
+11-Sep-2015 13:41:26.467 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\host-manager
+11-Sep-2015 13:41:26.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\host-manager has finished in 42 ms
+11-Sep-2015 13:41:26.510 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\manager
+11-Sep-2015 13:41:26.538 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\manager has finished in 28 ms
+11-Sep-2015 13:41:26.539 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ROOT
+11-Sep-2015 13:41:26.567 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ROOT has finished in 28 ms
+11-Sep-2015 13:41:26.570 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Sep-2015 13:41:26.577 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 831 ms

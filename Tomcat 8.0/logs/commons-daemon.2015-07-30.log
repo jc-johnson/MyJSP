@@ -1,0 +1,28 @@
+[2015-07-30 11:22:08] [info]  [10204] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-07-30 11:22:08] [info]  [10204] Service Tomcat8 name Apache Tomcat 8.0 Tomcat8
+[2015-07-30 11:22:08] [info]  [10204] Service 'Tomcat8' installed
+[2015-07-30 11:22:08] [info]  [10204] Commons Daemon procrun finished
+[2015-07-30 11:22:09] [info]  [ 5888] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-07-30 11:22:09] [info]  [ 5888] Updating service...
+[2015-07-30 11:22:09] [info]  [ 5888] Service 'Tomcat8' updated
+[2015-07-30 11:22:09] [info]  [ 5888] Update service finished.
+[2015-07-30 11:22:09] [info]  [ 5888] Commons Daemon procrun finished
+[2015-07-30 11:22:10] [info]  [ 6608] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-07-30 11:22:10] [info]  [ 6608] Updating service...
+[2015-07-30 11:22:10] [info]  [ 6608] Service 'Tomcat8' updated
+[2015-07-30 11:22:10] [info]  [ 6608] Update service finished.
+[2015-07-30 11:22:10] [info]  [ 6608] Commons Daemon procrun finished
+[2015-07-30 11:22:10] [info]  [10104] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-07-30 11:22:10] [info]  [10104] Updating service...
+[2015-07-30 11:22:10] [info]  [10104] Service 'Tomcat8' updated
+[2015-07-30 11:22:10] [info]  [10104] Update service finished.
+[2015-07-30 11:22:10] [info]  [10104] Commons Daemon procrun finished
+[2015-07-30 11:22:12] [info]  [ 6624] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2015-07-30 11:22:12] [info]  [ 6624] Running 'Tomcat8' Service...
+[2015-07-30 11:22:12] [info]  [ 3432] Starting service...
+[2015-07-30 11:22:14] [info]  [ 3432] Service started in 1094 ms.
+[2015-07-30 16:45:32] [info]  [ 1080] Console SHUTDOWN event signaled
+[2015-07-30 16:45:32] [info]  [ 1080] Stopping service...
+[2015-07-30 16:45:33] [info]  [ 1080] Service stop thread completed.
+[2015-07-30 16:45:34] [info]  [ 6624] Run service finished.
+[2015-07-30 16:45:34] [info]  [ 6624] Commons Daemon procrun finished

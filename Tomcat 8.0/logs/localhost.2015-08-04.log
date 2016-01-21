@@ -1,0 +1,417 @@
+04-Aug-2015 11:14:02.480 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+04-Aug-2015 11:14:02.480 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+04-Aug-2015 11:37:51.290 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.a
+7: %>
+8: 
+9: <%! int i=0; %>
+10: <%! int a, b, c; %>
+11: <%! Circle a = new Circle(2.0); %>
+12: 
+13: 
+
+
+An error occurred at line: 11 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.a
+8: 
+9: <%! int i=0; %>
+10: <%! int a, b, c; %>
+11: <%! Circle a = new Circle(2.0); %>
+12: 
+13: 
+14: <p>
+
+
+An error occurred at line: 11 in the jsp file: /hello.jsp
+Circle cannot be resolved to a type
+8: 
+9: <%! int i=0; %>
+10: <%! int a, b, c; %>
+11: <%! Circle a = new Circle(2.0); %>
+12: 
+13: 
+14: <p>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 10 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.a
+7: %>
+8: 
+9: <%! int i=0; %>
+10: <%! int a, b, c; %>
+11: <%! Circle a = new Circle(2.0); %>
+12: 
+13: 
+
+
+An error occurred at line: 11 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.a
+8: 
+9: <%! int i=0; %>
+10: <%! int a, b, c; %>
+11: <%! Circle a = new Circle(2.0); %>
+12: 
+13: 
+14: <p>
+
+
+An error occurred at line: 11 in the jsp file: /hello.jsp
+Circle cannot be resolved to a type
+8: 
+9: <%! int i=0; %>
+10: <%! int a, b, c; %>
+11: <%! Circle a = new Circle(2.0); %>
+12: 
+13: 
+14: <p>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:617)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1527)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+04-Aug-2015 13:19:27.333 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 24 in the jsp file: /hello.jsp
+ind cannot be resolved to a type
+21: 
+22: 
+23: 
+24: <%! ind day = 3; %>
+25: <h2>IF...ELSE</h2>
+26: <% if (day == 1 | day == 7) { %>
+27: 	<p> Today is weekend</p>
+
+
+An error occurred at line: 26 in the jsp file: /hello.jsp
+day cannot be resolved to a variable
+23: 
+24: <%! ind day = 3; %>
+25: <h2>IF...ELSE</h2>
+26: <% if (day == 1 | day == 7) { %>
+27: 	<p> Today is weekend</p>
+28: <% } else { %>
+29: 	<p> Today is not weekend</p>
+
+
+An error occurred at line: 26 in the jsp file: /hello.jsp
+day cannot be resolved to a variable
+23: 
+24: <%! ind day = 3; %>
+25: <h2>IF...ELSE</h2>
+26: <% if (day == 1 | day == 7) { %>
+27: 	<p> Today is weekend</p>
+28: <% } else { %>
+29: 	<p> Today is not weekend</p>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 24 in the jsp file: /hello.jsp
+ind cannot be resolved to a type
+21: 
+22: 
+23: 
+24: <%! ind day = 3; %>
+25: <h2>IF...ELSE</h2>
+26: <% if (day == 1 | day == 7) { %>
+27: 	<p> Today is weekend</p>
+
+
+An error occurred at line: 26 in the jsp file: /hello.jsp
+day cannot be resolved to a variable
+23: 
+24: <%! ind day = 3; %>
+25: <h2>IF...ELSE</h2>
+26: <% if (day == 1 | day == 7) { %>
+27: 	<p> Today is weekend</p>
+28: <% } else { %>
+29: 	<p> Today is not weekend</p>
+
+
+An error occurred at line: 26 in the jsp file: /hello.jsp
+day cannot be resolved to a variable
+23: 
+24: <%! ind day = 3; %>
+25: <h2>IF...ELSE</h2>
+26: <% if (day == 1 | day == 7) { %>
+27: 	<p> Today is weekend</p>
+28: <% } else { %>
+29: 	<p> Today is not weekend</p>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:617)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1527)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+04-Aug-2015 13:33:37.632 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 71 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.fontSize
+68: 
+69: 
+70: 
+71: <%! int fontSize; %>
+72: <h2>FOR LOOP Example</h2>
+73: <% for ( fontSize = 1; fontSize <= 3; fontSize++) { %>
+74: 	<font color="green" size="<%= fontSize %>">
+
+
+An error occurred at line: 83 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.fontSize
+80: 
+81: 
+82: 
+83: <%! itn fontSize; %>
+84: <h2>WHILE LOOP Example</h2>
+85: <%while (fontSize <= 3) { %>
+86: 	<font color="green" size="<%= fontSize %>">
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 71 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.fontSize
+68: 
+69: 
+70: 
+71: <%! int fontSize; %>
+72: <h2>FOR LOOP Example</h2>
+73: <% for ( fontSize = 1; fontSize <= 3; fontSize++) { %>
+74: 	<font color="green" size="<%= fontSize %>">
+
+
+An error occurred at line: 83 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.fontSize
+80: 
+81: 
+82: 
+83: <%! itn fontSize; %>
+84: <h2>WHILE LOOP Example</h2>
+85: <%while (fontSize <= 3) { %>
+86: 	<font color="green" size="<%= fontSize %>">
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:617)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1527)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+04-Aug-2015 13:34:30.938 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 71 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.fontSize
+68: 
+69: 
+70: 
+71: <%! int fontSize; %>
+72: <h2>FOR LOOP Example</h2>
+73: <% for ( fontSize = 1; fontSize <= 3; fontSize++) { %>
+74: 	<font color="green" size="<%= fontSize %>">
+
+
+An error occurred at line: 83 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.fontSize
+80: 
+81: 
+82: 
+83: <%! int fontSize; %>
+84: <h2>WHILE LOOP Example</h2>
+85: <%while (fontSize <= 3) { %>
+86: 	<font color="green" size="<%= fontSize %>">
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 71 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.fontSize
+68: 
+69: 
+70: 
+71: <%! int fontSize; %>
+72: <h2>FOR LOOP Example</h2>
+73: <% for ( fontSize = 1; fontSize <= 3; fontSize++) { %>
+74: 	<font color="green" size="<%= fontSize %>">
+
+
+An error occurred at line: 83 in the jsp file: /hello.jsp
+Duplicate field hello_jsp.fontSize
+80: 
+81: 
+82: 
+83: <%! int fontSize; %>
+84: <h2>WHILE LOOP Example</h2>
+85: <%while (fontSize <= 3) { %>
+86: 	<font color="green" size="<%= fontSize %>">
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:617)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1527)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+04-Aug-2015 14:18:54.295 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [/main.jsp (line: 10, column: 0) The value for the useBean class attribute action.TestBean is invalid.] with root cause
+ org.apache.jasper.JasperException: /main.jsp (line: 10, column: 0) The value for the useBean class attribute action.TestBean is invalid.
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:275)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:107)
+	at org.apache.jasper.compiler.Generator$GenerateVisitor.visit(Generator.java:1317)
+	at org.apache.jasper.compiler.Node$UseBean.accept(Node.java:1178)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2376)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2428)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2434)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:464)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2376)
+	at org.apache.jasper.compiler.Generator.generate(Generator.java:3594)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:250)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:617)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1527)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
