@@ -1,4 +1,4 @@
-<jsp:useBean id="user" class="user.UserData" scope="session"/>
+<jsp:useBean id="user" class="main.java.UserData" scope="session"/>
 <HTML>
     <BODY>
     <FORM METHOD="POST" ACTION="SaveName.jsp">
